@@ -1,0 +1,46 @@
+﻿@model HomeShareDAL.BienEchange
+@{
+    ViewBag.Title = "AjouterBien";
+    } 
+
+<h2>Ajouter un Bien</h2>
+
+
+<form method="post" action="~/ZoneMembre/Home/AjouterBien" enctype="multipart/form-data">
+    @**cf MedicoSoft, rescue me**@
+
+    @*@{
+
+        <h2>Save Me</h2>
+        <form method="post">
+            Votre numéro de registre national : <input type="text" name="txtregnat" />
+            <button>Save Me</button>
+        </form>*@
+
+ 
+
+
+    <form method="post">
+        Titre : <input type="text" name="tTitre" /></br>
+        Courte description : <input type="text" name="tDescCourte" /></br>
+        Longue description : <input type="text" name="tDescLongue" size="100" maxlength="40" /></br>
+        Pays: <input type="text" name="tPays" /></br>
+        @*Faut que je trouve le moyen d'integrer une dropDownlist relier a idpays*@
+        @*exemple:@Html.DropDownList("Countries", "select a country") avec une fonction*@
+        Ville : <input type="text" name="tVille" /></br>
+        Rue : <input type="text" name="Rue" /></br>
+        Code Postal : <input type="text" name="tCodePostal" /></br>      
+        Photo: <input type="file" name="tPhoto" /></br>
+        @*Photo : <input type="text" name="tPhoto" /></br>*@
+        N° : <input type="text" name="tNumero" /></br>
+        @Html.Label("AssuranceObligatoire", "Cochez la case si vous exiger une assurance du locataire")</br>
+        @Html.CheckBox("AssuranceObligatoire", false) </br>
+        <input type="submit" value="Envoyer" /></br>
+        
+    </form>
+
+    </form>
+
+
+
+

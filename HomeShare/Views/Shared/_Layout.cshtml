@@ -1,0 +1,154 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>@ViewBag.Title - HomeShare</title>
+
+    @Styles.Render("~/Content/css")
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+
+</head>
+
+<body>
+
+
+    <!-- Header Starts -->
+    <div class="navbar-wrapper">
+
+        <div class="navbar-inverse" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+
+
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+
+
+                <!-- Nav Starts -->
+                <div class="navbar-collapse  collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li class="active"><a href="~/Home/Index">Home</a></li>
+                        <li><a href="about.php">A propos de nous</a></li>
+                        <li><a href="agents.php">Les proprietaires</a></li>
+                        <li><a href="blog.php">Les biens en echange</a></li>
+                        <li><a href="contact.php">Contactez-nous</a></li>
+                    </ul>
+                </div>
+                <!-- #Nav Ends -->
+
+            </div>
+        </div>
+
+    </div>
+    <!-- #Header Starts -->
+
+
+    <div class="container">
+
+        <!-- Header Starts -->
+        <div class="header">
+            <a href="#"><img src="~/Content/img/logo.png" alt="Realestate"></a>
+
+            <ul class="pull-right">
+                <li><a href="#">Echanger</a></li>
+                <li><a href="#">Visiter</a></li>
+                <li><a href="~/ZoneMembre/Home/Index">Se connecter</a></li>
+            </ul>
+        </div>
+        <!-- #Header Starts -->
+        <div class="">
+
+
+            <div id="slider" class="sl-slider-wrapper">
+
+                <div class="sl-slider">
+
+                    <div class="sl-slide" data-orientation="horizontal" data-slice1-rotation="-25" data-slice2-rotation="-25" data-slice1-scale="2" data-slice2-scale="2">
+                        <div class="sl-slide-inner">
+                            <div class="bg-img bg-img-1"></div>
+                            <h2><a href="#"></a></h2>
+                            <blockquote>
+                                <p class="location"><span class="glyphicon glyphicon-map-marker"></span></p>
+                                <p></p>
+                                <cite></cite>
+                            </blockquote>
+                        </div>
+                    </div>
+
+                    <div class="sl-slide" data-orientation="vertical" data-slice1-rotation="10" data-slice2-rotation="-15" data-slice1-scale="1.5" data-slice2-scale="1.5">
+                        <div class="sl-slide-inner">
+                            <div class="bg-img bg-img-2"></div>
+                            <h2><a href="#"></a></h2>
+                            <blockquote>
+                                <p class="location"><span class="glyphicon glyphicon-map-marker"></span></p>
+                                <p></p>
+                                <cite></cite>
+                            </blockquote>
+                        </div>
+                    </div>
+                </div><!-- /sl-slider -->
+
+
+
+                <nav id="nav-dots" class="nav-dots">
+                    <span class="nav-dot-current"></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </nav>
+
+            </div><!-- /slider-wrapper -->
+        </div>
+    </div>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+
+            <div class="row">
+                <div class="col-lg-3 col-sm-3">
+                    <h4>Information</h4>
+
+
+                </div>
+
+                <div class="col-lg-3 col-sm-3">
+                    <h4>Newsletter</h4>
+
+                </div>
+
+                <div class="col-lg-3 col-sm-3">
+                    <h4>Suivez Nous</h4>
+
+                </div>
+
+                <div class="col-lg-3 col-sm-3">
+                    <h4>Contactez-nous</h4>
+
+                </div>
+            </div>
+            <p class="copyright">Copyright 2013. All rights reserved.	</p>
+
+
+    </div>
+    </div>
+
+    </footer>
+    </div>
+
+    @RenderSection("scripts", required: false)
+</body>
+</html>
